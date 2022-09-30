@@ -21,8 +21,10 @@ class BookAdapter(
     }
 
     override fun onBindViewHolder(holder: BookViewHolder, position: Int) {
-        holder.itemView.book_name1.text = books[position].name
-        holder.itemView.book_name2.text = books[position].writer
+        holder.itemView.tv_book_name1.text = books[position].name
+        holder.itemView.tv_writer_name.text = books[position].writer
+        holder.itemView.tv_book_name2.text = books[position].name
+        holder.itemView.tv_writer_name2.text = books[position].year
     }
 
     override fun getItemCount(): Int {
